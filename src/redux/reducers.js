@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import {CHANGE_QUESTION, QUESTION_ANSWER} from "./actions";
 
-
 function score(state = 0, action = {}) {
     switch (action.type) {
         default:

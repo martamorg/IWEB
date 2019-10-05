@@ -6,13 +6,13 @@ export default class ActionBar extends React.Component {
       render() {
           return (
               <div>
-                  <button onClick ={() => {
-                      if ((this.props.currentQuestion) !== 0) {
+                  <button id="111" onClick ={() => {
+                      if ((this.props.currentIndex) !== 0) {
                           this.props.onChangeQuestion('Anterior')
                       }
                   }
                   }
-                      className = {(this.props.currentQuestion) === 0 ? "no_clickable" : "clickable"}> Anterior
+                      className = {(this.props.currentIndex) === 0 ? "no_clickable" : "clickable"} > Anterior
                   </button>
 
                   <button onClick ={() => {
@@ -23,12 +23,12 @@ export default class ActionBar extends React.Component {
                   </button>
 
                   <button onClick ={() => {
-                      if ((this.props.currentQuestion +1) !== this.props.questionsLength) {
+                      if ((this.props.currentIndex +1) !== this.props.questionsLength) {
                           this.props.onChangeQuestion('Siguiente')
 
                       }
                   }}
-                  className = {(this.props.currentQuestion+1) === this.props.questionsLength ? "no_clickable" : "clickable"}> Siguiente
+                  className = {(this.props.currentIndex+1) === this.props.questionsLength ? "no_clickable" : "clickable"} > Siguiente
                   </button>
               </div>
 

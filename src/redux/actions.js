@@ -1,4 +1,4 @@
-export const QUESTION_ANSWER = 'QUESTION_ANSWER';
+ export const QUESTION_ANSWER = 'QUESTION_ANSWER';
 export const CHANGE_QUESTION = 'CHANGE_QUESTION';
 
 export function questionAnswer(index, answer) {
@@ -10,8 +10,5 @@ export function changeQuestion(index, change) {
 }
 
 export function submit(questions){
-    return{
-        type: "SUBMIT",
-        payload: {questions}
-    }
+    return{ type: "SUBMIT", payload: {questions}};
 }

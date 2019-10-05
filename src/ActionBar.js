@@ -1,4 +1,5 @@
 import React from 'react';
+import "../src/App.css"; //pq no va ?
 export default class ActionBar extends React.Component {
 
 
@@ -16,17 +17,17 @@ export default class ActionBar extends React.Component {
 
                   <button onClick ={() => {
                           this.props.onSubmit()
-              }
-              }
-              > Submit
+                  }
+                  }
+                  > Submit
                   </button>
 
                   <button onClick ={() => {
                       if ((this.props.currentQuestion +1) !== this.props.questionsLength) {
                           this.props.onChangeQuestion('Siguiente')
 
-              }
-              }}
+                      }
+                  }}
                   className = {(this.props.currentQuestion+1) === this.props.questionsLength ? "no_clickable" : "clickable"}> Siguiente
                   </button>
               </div>

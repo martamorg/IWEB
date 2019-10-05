@@ -9,7 +9,7 @@ function App(props) {
       <div className="App">
         <Game
         question={props.questions[props.currentQuestion]}
-        onQuestionAnswer={(answer)=>{props.dispatch(questionAnswer(props.currentQuestion,answer))}}
+        onQuestionAnswer={ (answer) =>{props.dispatch(questionAnswer(props.currentQuestion,answer))}}
         currentQuestion = {props.currentQuestion}
         onChangeQuestion = { (change) => {props.dispatch(changeQuestion(props.currentQuestion,change))}}
         questionsLength = {props.questions.length}
@@ -17,9 +17,8 @@ function App(props) {
         score = {props.score}
         onSubmit = {()=>this.props.dispatch(submit(this.props.questions))}
         //fetch = {this.props.fetch}
-              />
-
-    </div>
+        />
+      </div>
 
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ActionBar from "./ActionBar";
 import Content from "./Content";
+import "../src/App.css"
 
 export default class Game extends React.Component {
     render() {

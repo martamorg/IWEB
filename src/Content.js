@@ -4,6 +4,8 @@ import Answer from './Answer';
 import Image from './Image';
 import Author from './Author';
 import Tips from './Tips';
+import Score from './Score'
+import "../src/App.css"
 
 export default class Content extends React.Component {
     render() {
@@ -26,6 +28,10 @@ export default class Content extends React.Component {
                     />
                     <Tips
                             currentQuestion={this.props.currentQuestion}
+                    />
+                    <Score
+                            score = {this.props.score}
+                            finished = {this.props.finished}
                     />
                 </div>
 

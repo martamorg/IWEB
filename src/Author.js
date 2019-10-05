@@ -5,15 +5,15 @@ export default class Author extends React.Component {
     render(){
 
         return(
-            <div>
+            <figure>
                 <img
                     src={this.props.currentQuestion.author.photo.url}
                     alt={this.props.currentQuestion.author.photo.filename}
-                    width={"10%"}
-                    height={"10%"}
+                    width={"5%"}
+                    height={"5%"}
                 />
-                <p> created by: {this.props.currentQuestion.author.username} </p>
-            </div>
+                <figcaption><small> created by: {this.props.currentQuestion.author.username} </small></figcaption>
+            </figure>
         )
     }
 }

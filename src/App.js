@@ -15,7 +15,7 @@ function App(props) {
         questionsLength = {props.questions.length}
         finished = {props.finished}
         score = {props.score}
-        onSubmit = {()=>this.props.dispatch(submit(this.props.questions))}
+        onSubmit = {()=>props.dispatch(submit(props.questions))}
         //fetch = {this.props.fetch}
         />
       </div>

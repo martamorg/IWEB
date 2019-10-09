@@ -1,12 +1,12 @@
 import React from 'react';
-import "../src/App.css"; //pq no va ?
+import "../src/App.css";
 export default class ActionBar extends React.Component {
 
 
       render() {
           return (
               <div>
-                  <button id="111" onClick ={() => {
+                  <button onClick ={() => {
                       if ((this.props.currentIndex) !== 0) {
                           this.props.onChangeQuestion('Anterior')
                       }
